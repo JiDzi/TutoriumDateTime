@@ -25,6 +25,7 @@ public class DateController {
         return dateService.getTime();
     }
 
+
     @GetMapping("/date")
     public String getDate(@RequestParam(required = false) String format) {
     //required=false heißt, dass man kein format mitgeben MUSS; dann hat "format" den wert NULL
